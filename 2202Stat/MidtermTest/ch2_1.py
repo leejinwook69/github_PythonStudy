@@ -1,7 +1,7 @@
 # module import
 
 import os
-os.chdir("c:\\Temp")
+os.chdir("D:\\DevResults\\GitProjs\\github_PythonStudy\\2202Stat\\MidtermTest")
 os.getcwd()
 
 #------------ data input --------------------
@@ -55,8 +55,8 @@ plt.ylabel("빈도수")
 plt.title("사망원인에 따른 막대그래프")
 plt.xticks(rotation=0)
 
-plt.savefig('./plot/그림2.png') # 그림 저장
-# plt.show()
+#plt.savefig('./plot/그림2.png') # 그림 저장
+plt.show()
 
 #------------ pie plot --------------------
 import matplotlib.pyplot as plt
@@ -70,8 +70,8 @@ plt.pie(table['도수'],labels=index)
 plt.rc('font', size=8) # 그래프 글자 크기
 
 plt.title("사망원인에 대한 원형 그래프")
-plt.savefig('./plot/그림21.png')
-# plt.show()
+#plt.savefig('./plot/그림21.png')
+plt.show()
 
 
 
@@ -100,8 +100,8 @@ plt.ylabel('Frequency')
 plt.title("Histogram of drink")
 plt.plot(x,n,'red',marker='o')   #도수다각형 
 
-plt.savefig('./plot/그림26.png')
-# plt.show()
+#plt.savefig('./plot/그림26.png')
+plt.show()
 
 
 
@@ -109,7 +109,7 @@ plt.savefig('./plot/그림26.png')
 #파일 읽기
 import pandas as pd
 
-df = pd.read_csv('./BMI-example.txt',sep = '\t',header=None)
+df = pd.read_csv('./BMI-example.txt',sep = ', ',header=None)
 print(df)
 height = np.array(df[0])
 weight = np.array(df[1])

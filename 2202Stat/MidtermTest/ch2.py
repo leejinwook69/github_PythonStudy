@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 plt.figure()
 n, bins, patches = plt.hist(drink, bins = 10, facecolor="blue", alpha = 0.3)
 print(n, bins)
-x = [(bins[i]+bins[i+1])/2 for i in range(len(bins)-1)]   #도수다각형 
+x = [(bins[i]+bins[i+1])/2 for i in range(len(bins)-1)] #  #도수다각형
 w_bin = bins[1]-bins[0]  #도수다각형 
 x.insert(0,x[0]-w_bin)  #도수다각형 
 x.append(x[-1]+w_bin)  #도수다각형 
