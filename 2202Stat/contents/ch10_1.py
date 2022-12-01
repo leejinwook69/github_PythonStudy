@@ -31,7 +31,8 @@ pval=2*(1-stats.norm.cdf(zval));print(pval)
 #z-test (easy way) => (Z, p)
 from statsmodels.stats.weightstats import ztest as ztest
 print(ztest(height, value=159, alternative="two-sided")) #smaller, larger
-
+pvl= 2*(1-stats.norm.cdf(zval));
+print(pval)
 
 #평균교통소음
 noise=np.array([55.9,63.8,57.2,59.8,65.7,62.7,60.8,51.3,61.8,56.0,
